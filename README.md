@@ -1,0 +1,4 @@
+gane
+====
+
+Symbol extracter
