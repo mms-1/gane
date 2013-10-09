@@ -1,4 +1,4 @@
 gane
 ====
 
-Symbol extracter
+Symbol extractor
