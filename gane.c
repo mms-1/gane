@@ -5,6 +5,7 @@
 
 // #include <config.h>
 #include <stdio.h>
+#include <string.h>
 
 /* The official name of this program (e.g., no 'g' prefix).  */
 #define PROGRAM_NAME "gane"
@@ -15,6 +16,8 @@
 
 int main(int argc, char const *argv[])
 {
-	printf("Hello\n");
+	char* str = "Some string with symbols";
+	printf("[i] Initial string: %s\n", str);
+	
 	return 0;
 }
