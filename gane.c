@@ -14,10 +14,46 @@
 
 
 
+int iscool(int symbol)
+{
+	/* // TODO a nice comparison with symbols from argument string
+	switch (symbol)
+	{
+		case 'o':
+		case ' ':
+			return 1;
+		default:
+			return 0;
+	}
+	//*/
+	return 1;
+}
+
+
 int main(int argc, char const *argv[])
 {
 	char* str = "Some string with symbols";
-	printf("[i] Initial string: %s\n", str);
+	int c, ganed =0;
 	
+	// TODO test-file
+	//printf("[i] Initial string: %s\n", str);
+		
+	
+	do
+	{
+		c = fgetc(stdin);
+		if (c == 32)
+		{
+			fputc('.',stdout);
+		} else {
+			if ( (c != EOF) && (iscool(c)) )
+			{
+				fputc(c, stdout);
+				ganed++;
+			}
+		}
+	} while (c != EOF);	
+	printf("[i] Symbols gained totaly: %d\n", ganed); // TODO always print to stdout only
 	return 0;
+	/*<< 00 OO >>*/
 }
