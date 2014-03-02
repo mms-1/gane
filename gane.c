@@ -14,7 +14,7 @@
 
 
 
-int iscool(int symbol)
+int isCool(int symbol)
 {
 	/* // TODO a nice comparison with symbols from argument string
 	switch (symbol)
@@ -33,7 +33,7 @@ int iscool(int symbol)
 int main(int argc, char const *argv[])
 {
 	char* str = "Some string with symbols";
-	int c, ganed =0;
+	int c, ganed = 0;
 	
 	// TODO test-file
 	//printf("[i] Initial string: %s\n", str);
